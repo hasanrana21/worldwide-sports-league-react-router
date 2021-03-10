@@ -1,6 +1,5 @@
 import React from 'react';
 import './Details.css';
-import playgroundImg from '../../Images/ground3.jpg';
 import gentleman from '../../Images/Rectangle28.png';
 import ladies from '../../Images/female.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

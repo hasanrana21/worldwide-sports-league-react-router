@@ -15,7 +15,7 @@ const LeagueDetails = () => {
             // console.log(data.leagues);
             setDetails(data.leagues);
         })
-    }, [])
+    }, [idLeague])
     return (
         <div>
             {
