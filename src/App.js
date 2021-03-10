@@ -7,13 +7,34 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Home from "./Components/Home/Home";
+import LeagueDetails from "./Components/LeagueDetails/LeagueDetails";
+import NotFound from "./Components/NotFound/NotFound";
+require('typeface-roboto');
 
 
 function App() {
   return (
-    <div >
-      <Home></Home>
-    </div>
+    <Router>
+      <Switch>
+
+        <Route path="/home">
+          <Home/>
+        </Route>
+
+        <Route path="/details/:idLeague">
+          <LeagueDetails/>
+        </Route>
+
+        <Route exact path="/">
+          <Home/>
+        </Route>
+
+        <Route path="*">
+          <NotFound/>
+        </Route>
+
+      </Switch>
+    </Router>
   );
 }
 

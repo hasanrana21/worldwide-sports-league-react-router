@@ -1,0 +1,14 @@
+.card {
+    border-radius: 6px;
+    width: 300px;
+    margin: 20px 0px;
+    padding: 40px 25px;
+    text-align: center;
+}
+.card img{
+    width: 90px;
+    margin-bottom: 15px;
+}
+.card btn{
+    text-align: center
+}

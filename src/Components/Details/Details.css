@@ -1,0 +1,11 @@
+.league-info-container{
+    height: 250px;
+    margin: 25px auto;
+    margin-bottom: 0;
+    background-color: rgba(234, 0, 255, 0.76);
+    border-radius: 10px;
+}
+.league-image img {
+    width: 380px;
+    margin-left: 100px;
+}
