@@ -1,6 +1,6 @@
 import './Home.css';
 import React, { useEffect, useState } from 'react';
-import playground from '../../Images/ground3.jpg';
+import playground from '../../Images/playground.jpg';
 import Card from '../Card/Card';
 
 const Home = () => {
@@ -20,11 +20,12 @@ const Home = () => {
             <div className="home-banner" style={{ 
                 backgroundImage: `url(${playground})`,
                 backgroundRepeat: 'no-repeat',
-                height:'200px' ,
+                height:'250px' ,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
+                borderBottom: '3px solid lightgrey'
                 }}>
-                <h1 style={{zIndex: '15', color: 'white', fontSize: '46px', fontStyle: 'italic', textAlign: 'center', paddingTop: '80px'}}>World-Wide Sports League</h1>
+                <h1 style={{zIndex: '15', color: 'white', fontWeight: '800', fontSize: '51px', fontStyle: 'italic', textAlign: 'center', paddingTop: '85px'}}>World-Wide Sports League</h1>
             </div>
                 
                 <div className="card-body row justify-content-evenly">

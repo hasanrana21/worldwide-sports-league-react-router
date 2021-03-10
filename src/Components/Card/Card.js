@@ -16,7 +16,7 @@ const Card = (props) => {
             <p>Sports Type: {strSport}</p>
             <div className="card-btn">
                 <Link to={`/league/details/${idLeague}`}>
-                    <button className="btn btn-primary w-50 rounded-pill">Explore  <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button className="main-button btn btn-primary w-50 rounded-pill">Explore  <FontAwesomeIcon icon={faArrowRight} /></button>
                 </Link>
             </div>
         </div>
