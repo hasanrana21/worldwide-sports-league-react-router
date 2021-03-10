@@ -16,7 +16,7 @@ const Details = (props) => {
         <>
             <div style={{backgroundImage: `url(${strBanner})`,
             backgroundRepeat: 'no-repeat',
-            height:'300px' ,
+            height:'270px' ,
             backgroundPosition: 'center',
             backgroundSize: 'cover'}} className="details-banner-image">
 
@@ -56,7 +56,7 @@ const Details = (props) => {
 
                 <p>{strDescriptionFR}</p>
             </div>
-            <div className="w-100 text-center">
+            <div className="w-100 text-center mb-4">
                 <Link to="/home">
                     <button className="btn btn-primary w-25"><FontAwesomeIcon icon={faArrowCircleLeft}/> Back</button>
                 </Link>

@@ -2,7 +2,7 @@ import React from 'react';
 import './Card.css';
 import logo from '../../Images/image6.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 const Card = (props) => {
@@ -16,7 +16,7 @@ const Card = (props) => {
             <p>Sports Type: {strSport}</p>
             <div className="card-btn">
                 <Link to={`/league/details/${idLeague}`}>
-                    <button className="btn btn-primary w-50">Explore  <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
+                    <button className="btn btn-primary w-50 rounded-pill">Explore  <FontAwesomeIcon icon={faArrowRight} /></button>
                 </Link>
             </div>
         </div>

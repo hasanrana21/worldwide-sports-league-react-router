@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Details from '../Details/Details';
+import Social from '../Social/Social';
 import './LeagueDetails.css';
 
 const LeagueDetails = () => {
@@ -17,12 +18,19 @@ const LeagueDetails = () => {
         })
     }, [idLeague])
     return (
-        <div>
-            {
-                details.map(detail => <Details detail ={detail} key={detail.idLeague}></Details>)
-            }
-            <h3 className="text-center pt-2">League Id '{idLeague}'</h3>
-        </div>
+        <>
+            <div>
+                {
+                    details.map(detail => <Details detail ={detail} key={detail.idLeague}></Details>)
+                }
+            </div>
+            <div>
+                {
+                    details.map(socialLink => <Social socialLink={socialLink}></Social>)
+                }
+            </div>
+        </>
+
     );
 };
 
