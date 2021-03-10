@@ -51,9 +51,7 @@ const Details = (props) => {
             </div>
             <div className="description w-75 mx-auto my-4 text-justify">
                 <p>{strDescriptionEN}</p>
-
                 <br/>
-
                 <p>{strDescriptionFR}</p>
             </div>
             <div className="w-100 text-center mb-4">

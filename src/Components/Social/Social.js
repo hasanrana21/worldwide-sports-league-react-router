@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Social.css';
 
-const Social = (props) => {
+const Social = () => {
     return (
         <div className="social-icon">
             <a href="https://www.facebook.com" target="blank"><FontAwesomeIcon icon={faFacebook}/></a>
