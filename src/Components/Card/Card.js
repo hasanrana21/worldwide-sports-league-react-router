@@ -15,7 +15,7 @@ const Card = (props) => {
             <h6><strong>{strLeague}</strong></h6>
             <p>Sports Type: Football</p>
             <div className="card-btn">
-                <Link to={`/details/${idLeague}`}>
+                <Link to={`/league/details/${idLeague}`}>
                     <button className="btn btn-primary w-50">Explore  <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
                 </Link>
             </div>

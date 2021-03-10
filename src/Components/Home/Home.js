@@ -17,14 +17,14 @@ const Home = () => {
     }, [])
     return (
         <div className="home">
-            <div style={{ 
+            <div className="home-banner" style={{ 
                 backgroundImage: `url(${playground})`,
                 backgroundRepeat: 'no-repeat',
                 height:'200px' ,
-                backgroundPosition: 'bottom',
+                backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 }}>
-                <h1 style={{zIndex: '5', color: 'white', textAlign: 'center', paddingTop: '80px'}}>World-Wide Sports League {leagues.length}</h1>
+                <h1 style={{zIndex: '15', color: 'white', fontSize: '46px', fontStyle: 'italic', textAlign: 'center', paddingTop: '80px'}}>World-Wide Sports League</h1>
             </div>
                 
                 <div className="card-body row justify-content-evenly">

@@ -2,10 +2,34 @@
     height: 250px;
     margin: 25px auto;
     margin-bottom: 0;
-    background-color: rgba(234, 0, 255, 0.76);
+    background-color: gray;
     border-radius: 10px;
 }
 .league-image img {
     width: 380px;
     margin-left: 100px;
+}
+.details-logo{
+    width: 150px;
+    height: 150px;
+}
+.league-info h3{
+    color: #f0db4f;
+    font-weight: 800;
+    line-height: 60px;
+    font-size: 31px;
+}
+.league-info p{
+    color: #f0db4f;
+    font-weight: 500;
+    line-height: 18px;
+}
+.league-info span{
+ text-align: right;
+ margin-right: 11px;
+}
+.details-banner-image{
+    background-color: #111;
+    opacity: .7;
+    z-index: 10;
 }
