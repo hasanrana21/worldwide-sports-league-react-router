@@ -8,17 +8,17 @@ import { faArrowCircleLeft, faFlag, faFutbol, faMarsStroke, faPodcast } from '@f
 import { Link } from 'react-router-dom';
 
 const Details = (props) => {
-    const {strLeague, dateFirstEvent, strCountry, strGender, strBadge} = props.detail;
+    const {strLeague, dateFirstEvent, strCountry, strGender, strBadge, strBanner, strSport, strDescriptionEN, strDescriptionFR} = props.detail;
     
     let imageURL = "";
     strGender === "Male" ? imageURL = gentleman : imageURL = ladies;
     
     return (
         <>
-            <div style={{backgroundImage: `url(${playgroundImg})`,
+            <div style={{backgroundImage: `url(${strBanner})`,
             backgroundRepeat: 'no-repeat',
-            height:'200px' ,
-            backgroundPosition: 'bottom',
+            height:'300px' ,
+            backgroundPosition: 'center',
             backgroundSize: 'cover'}} className="details-banner-image">
 
                 <div style={{backgroundImage: `url(${strBadge})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover', zIndex: '100', color: 'white', textAlign: 'center', margin: '0 auto'}} className='details-logo'>
@@ -40,7 +40,7 @@ const Details = (props) => {
                         <div className="col-md-11">
                             <p> Founded: {dateFirstEvent}</p>
                             <p>  Country: {strCountry}</p>
-                            <p> Sports Type: Football</p>
+                            <p> Sports Type: {strSport}</p>
                             <p> Gender: {strGender}</p>
                         </div>
                     </div>
@@ -51,11 +51,11 @@ const Details = (props) => {
                 </div>
             </div>
             <div className="description w-75 mx-auto my-4 text-justify">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione id nulla architecto voluptates consequatur qui doloremque iure autem, porro, temporibus beatae veniam eius, eum nobis alias quod facere. Ipsa tempora reiciendis unde facilis quibusdam, optio doloribus! Maxime neque officia quibusdam voluptate quos illum aliquid necessitatibus magni dolore dolorum impedit expedita fugit, assumenda iusto fugiat voluptatibus, esse consequuntur enim non voluptas? Unde expedita rem est. Obcaecati id cum quod minus nulla beatae perferendis, velit dolores quo illum exercitationem eligendi ex magni aliquid natus quibusdam ab. Nemo omnis excepturi quod accusamus, minima amet doloribus neque, facilis voluptatum reprehenderit non quibusdam, optio quos.</p>
+                <p>{strDescriptionEN}</p>
 
                 <br/>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas accusamus ut minus sit nulla. Voluptate magnam quam laborum incidunt ratione quia pariatur molestias alias velit explicabo fugit provident consectetur eaque repellendus illo, impedit aspernatur perspiciatis, asperiores vitae repellat veritatis error. Quibusdam ipsa blanditiis esse, totam voluptatum commodi iusto magni enim, ipsam odit doloremque quaerat error sint nostrum aperiam quae veritatis dignissimos vero id molestiae ut alias distinctio? Dolores doloribus quisquam quas, veniam illum, minus possimus fugit dolore eaque perspiciatis delectus reprehenderit adipisci vitae quia similique ea tenetur numquam consequatur voluptas ipsum laborum? Autem, harum porro reiciendis fuga earum dolorem laborum.</p>
+                <p>{strDescriptionFR}</p>
             </div>
             <div className="w-100 text-center">
                 <Link to="/home">
