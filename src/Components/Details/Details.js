@@ -56,7 +56,7 @@ const Details = (props) => {
             </div>
             <div className="w-100 text-center mb-4">
                 <Link to="/home">
-                    <button className="btn btn-primary w-25"><FontAwesomeIcon icon={faArrowCircleLeft}/> Back</button>
+                    <button className="main-button btn btn-primary w-25"><FontAwesomeIcon icon={faArrowCircleLeft}/> Back</button>
                 </Link>
             </div>
         </>

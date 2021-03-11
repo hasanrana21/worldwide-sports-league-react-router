@@ -26,7 +26,7 @@ const LeagueDetails = () => {
             </div>
             <div>
                 {
-                    details.map(socialLink => <Social socialLink={socialLink}></Social>)
+                    details.map(socialLink => <Social socialLink={socialLink} key={socialLink.idLeague}></Social>)
                 }
             </div>
         </>
